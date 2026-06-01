@@ -50,3 +50,7 @@ print(f"Fan status: {'ON' if fan1.get_on() else 'off'}")
         print(f"speed: {fan2.get_speed()}")
         print(f"radius: {int(fan2.get_radius())}")
         print(f"color: {fan2.get_color()}")
+
+
+    if __name__ == "__main__":
+        TestFan()
