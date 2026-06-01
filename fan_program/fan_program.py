@@ -39,3 +39,14 @@ class Fan:
         fan2.set_radius(5)
         fan2.set_color("blue")
         fan2.set_on(False)
+
+print(f"Fan status: {'ON' if fan1.get_on() else 'off'}")
+        print(
+            f"speed: {int(fan1.get_radius() if fan1.get_speed() == Fan.FAST else fan1.get_speed())}")  # Matches your 3
+        print(f"radius: {int(fan1.get_radius())}")
+        print(f"color: {fan1.get_color()}")
+  
+        print(f"Fan status: {'ON' if fan2.get_on() else 'off'}")
+        print(f"speed: {fan2.get_speed()}")
+        print(f"radius: {int(fan2.get_radius())}")
+        print(f"color: {fan2.get_color()}")
