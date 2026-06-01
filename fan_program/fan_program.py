@@ -25,22 +25,20 @@ class Fan:
 
         def set_color(self, color): self.__color = color
 
-    def TestFan():
-        # Object 1
+def TestFan():
         fan1 = Fan()
         fan1.set_speed(Fan.FAST)
         fan1.set_radius(10)
         fan1.set_color("yellow")
         fan1.set_on(True)
 
-        # Object 2
         fan2 = Fan()
         fan2.set_speed(Fan.MEDIUM)
         fan2.set_radius(5)
         fan2.set_color("blue")
         fan2.set_on(False)
 
-print(f"Fan status: {'ON' if fan1.get_on() else 'off'}")
+        print(f"Fan status: {'ON' if fan1.get_on() else 'off'}")
         print(
             f"speed: {int(fan1.get_radius() if fan1.get_speed() == Fan.FAST else fan1.get_speed())}")  # Matches your 3
         print(f"radius: {int(fan1.get_radius())}")
@@ -50,7 +48,6 @@ print(f"Fan status: {'ON' if fan1.get_on() else 'off'}")
         print(f"speed: {fan2.get_speed()}")
         print(f"radius: {int(fan2.get_radius())}")
         print(f"color: {fan2.get_color()}")
-
-
-    if __name__ == "__main__":
+    
+ if __name__ == "__main__":
         TestFan()
