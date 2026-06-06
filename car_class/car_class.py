@@ -19,4 +19,6 @@ def brake(self):
 def get_speed(self):
         """Return the current speed."""
         return self.__speed
-        
+
+main_car():
+    my_car = Car("2024", "Toyota")
