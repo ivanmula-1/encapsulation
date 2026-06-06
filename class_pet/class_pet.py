@@ -34,3 +34,13 @@ def main_pet():
     my_pet.set_name(name_input)
     my_pet.set_animal_type(type_input)
     my_pet.set_age(age_input)
+
+    
+    print("\n--- Displaying Pet Details ---")
+    print(f"Pet Name:    {my_pet.get_name()}")
+    print(f"Animal Type: {my_pet.get_animal_type()}")
+    print(f"Pet Age:     {my_pet.get_age()}")
+
+
+if __name__ == "__main__":
+    main_pet()
