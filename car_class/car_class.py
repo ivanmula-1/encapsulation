@@ -15,3 +15,8 @@ def brake(self):
             self.__speed -= 5
         else:
             self.__speed = 0
+
+def get_speed(self):
+        """Return the current speed."""
+        return self.__speed
+        
