@@ -23,7 +23,16 @@ def get_speed(self):
 main_car():
     my_car = Car("2024", "Toyota")
 
-
+pront ("\n--- ACCELERATING ---")
     for i in range(5):
         my_car.accelerate()
         print(f"Current speed after acceleration {i + 1}: {my_car.get_speed()}") 
+
+print("\n--- BRAKING ---")
+ for i in range(5):
+        my_car.brake()
+        print(f"Current speed after brake {i + 1}: {my_car.get_speed()}")
+
+
+if __name__ == "__main__":
+    main_car()
